@@ -1,0 +1,28 @@
+{
+  "bridge": {
+    "name": "Homebridge",
+    "username": "CD:22:3D:E3:CE:30",
+    "port": 51826,
+    "pin": "031-45-154"
+  },
+
+  "description": "This is an advanced example configuration for the esphome-ac homebridge plugin",
+  "platforms": [
+    {
+      "platform": "ESPHomeAC",
+      "name": "ESPHomeAC",
+      "debug": false,
+      "devices": [
+        {
+          "name": "My AC",
+          "host": "192.168.1.120",
+          "port": 6053,
+          "encryptionKey": ""
+        }
+      ]
+    }
+  ],
+
+  "accessories": [
+  ]
+}

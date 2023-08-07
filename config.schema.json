@@ -1,0 +1,80 @@
+{
+  "pluginAlias": "ESPHomeAC",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Homebridge plugin for ESPHome AC Controller",
+  "footerDisplay": "Created by @nitaybz",
+  "schema": {
+      "type": "object",
+      "properties": {
+          "name": {
+              "title": "Plugin Name (for logs)",
+              "type": "string",
+              "default": "ESPHomeAC",
+              "required": false
+          },
+          "debug": {
+              "title": "Enable Debug Logs",
+              "description": "When checked, the plugin will produce extra logs for debugging purposes",
+              "type": "boolean",
+              "default": false,
+              "required": false
+          },
+          "devices": {
+              "type": "array",
+              "required": true,
+              "items": {
+                "title": "Devices",
+                "type": "object",
+                "properties": {
+                  "name": {
+                      "title": "Name of the Device in HomeKit",
+                      "type": "string",
+                      "required": true
+                  },
+                  "host": {
+                      "title": "Device Hostname or IP",
+                      "type": "string",
+                      "required": true
+                  },
+                  "port": {
+                      "title": "API Port",
+                      "type": "number",
+                      "default": 6053,
+                      "required": false
+                  },
+                  "encryptionKey": {
+                      "title": "API Encryption Key (if available)",
+                      "type": "string",
+                      "required": false
+                  }
+
+                }
+              }
+          }
+      }
+  },
+    "layout": [
+      {
+        "key": "name"
+      },
+      {
+        "key": "debug"
+      },
+      {
+        "key": "devices",
+        "type": "array",
+        "title": "Custom Devices Settings",
+        "orderable": false,
+        "buttonText": "Add Device",
+        "expandable": true,
+        "expanded": false,
+        "items": [
+          "devices[].name",
+          "devices[].host",
+          "devices[].port",
+          "devices[].encryptionKey"
+          ]
+      }
+    ]
+} 

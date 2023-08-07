@@ -1,0 +1,51 @@
+{
+  "name": "homebridge-esphome-ac",
+  "description": "Homebridge plugin for ESPHome AC accessories",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nitaybz/homebridge-esphome-ac.git"
+  },
+  "license": "MIT",
+  "preferGlobal": true,
+  "keywords": [
+    "homebridge-plugin",
+    "homebridge-esphome",
+    "homebridge-esphome-ac",
+    "esphome",
+    "esphome-ac",
+    "climate"
+  ],
+  "bugs": {
+    "url": "https://github.com/nitaybz/homebridge-esphome-ac/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "homebridge": ">=1.5.0"
+  },
+  "dependencies": {
+    "@2colors/esphome-native-api": "^1.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^8.46.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "test": ""
+  },
+  "funding": [
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/nitaybz"
+    },
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/nitaybz"
+    },
+    {
+      "type": "kofi",
+      "url": "https://ko-fi.com/nitaybz"
+    }
+  ]
+}
