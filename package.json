@@ -1,7 +1,7 @@
 {
   "name": "homebridge-esphome-ac",
   "description": "Homebridge plugin for ESPHome AC accessories",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "repository": {
     "type": "git",
     "url": "git://github.com/nitaybz/homebridge-esphome-ac.git"
@@ -20,8 +20,8 @@
     "url": "https://github.com/nitaybz/homebridge-esphome-ac/issues"
   },
   "engines": {
-    "node": ">=18.0.0",
-    "homebridge": ">=1.5.0"
+    "node": "^22.10.0 || ^24.0.0",
+    "homebridge": "^1.8.0 || ^2.0.0"
   },
   "dependencies": {
     "@2colors/esphome-native-api": "^1.2.3"
